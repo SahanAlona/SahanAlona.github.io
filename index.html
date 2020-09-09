@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather API</title>
+  </head>
+
+  <body>
+    <body>
+        <div class="wrapper">
+            <div class="main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-5 info">
+                            <div>
+                                <h2>Wheather API</h2>
+                                <p>Find out the weather in your city</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-7 form">
+                            <form action="#">
+                                
+                                <div class="form-control-group">
+                                    <select name="select" class="city-name">
+                                        <option value="Kiev" selected>Kiev</option> 
+                                        <option value="Kharkiv" >Kharkiv</option>
+                                        <option value="Lviv">Lviv</option>
+                                        <option value="Odessa">Odessa</option>
+                                        <option value="Dnipro">Dnipro</option>
+                                      </select>
+                                    <!-- <input type="text" name="city" placeholder="Enter the city"  class="city-name"> -->
+                                    <button class="btn">Get the weather</button>
+                                </div>
+                            </form>
+                            
+                            <div class="infoWeath">
+                                <p class="error"></p>
+                                <p class="name">City:</p>
+                                <p class="degree">Temperature:</p>
+                                <p class="disclaimer"></p>
+                                <span class="features"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
